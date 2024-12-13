@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* Algemene stijlen */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 100vw;
+  background-color: #dedbd2;
+  color: #333;
+}
+main {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip-link */
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* Navbar */
+header {
+  background-color: #474444;
+  padding: 1em 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.nav-links .brand {
+  margin-right: auto;
+}
+
+.nav-links a {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 0.2em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.nav-links a:focus {
+  outline: 2px dashed #0056b3;
+}
+
+/* Sectie stijlen */
+.box {
+  display: flex;
+  background: #fff;
+  border: 0.1em solid #ddd;
+  border-radius: 0.5em;
+  box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+
+.episode {
+  display: flex;
+  background: #fff;
+  border: 0.1em solid #ddd;
+  border-radius: 0.5em;
+  box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 0.1em solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.1);
+  gap: 1em;
+}
+
+/* Afleveringen en afbeeldingen */
+.episodes {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.episode img, .episode-populair img, .info img {
+  width: 8em;
+  height: 8em;
+  object-fit: cover;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  margin: 1em 0 0 1em;
+}
+
+.logo img {
+  width: 8em;
+height: 8em;
+object-fit: cover;
+border-radius: 0.5em 0.5em 0.5em 0.5em;
+margin: 1em 0 0 1em;
+}
+
+.content {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rice-logo {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.logo img {
+  width: 6em;
+height: 6em;
+object-fit: cover;
+border-radius: 0.5em 0.5em 0.5em 0.5em;
+margin: 2.5em 0 0 1em;
+}
+
+/* Team sectie */
+.team-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2em 0em;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap: 2em;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 0.6em;
+  padding: 1.5em;
+  box-shadow: 0 0.25em 0.4em rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Typografie */
+h1 {
+  font-family: Helvetica Neue, sans-serif;
+  color: rgb(64, 57, 57);
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  color: rgb(128, 140, 169);
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.5em;
+  color: #333;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.9em;
+  color: rgb(51, 53, 52);
+  margin-bottom: 1em;
+  line-height: 1.6em;
+}
+
+.date {
+  font-size: 0.8em;
+  color: #999;
+}
+
+button {
+  align-self: flex-start;
+  background-color: #474444;
+  color: #fff;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Lijsten */
+.podcast-list {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.podcast-list li {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #444; 
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-column h3,
+.footer-column p,
+.footer-column a {
+  color: white;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
