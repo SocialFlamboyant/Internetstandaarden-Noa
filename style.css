@@ -15,6 +15,8 @@ main {
 }
 
 /* Skip-link */
+/* <!-- https://www.w3schools.com/accessibility/accessibility_skip_links.php --> */
+
 .skip {
   position: absolute;
   left: -10000px;
